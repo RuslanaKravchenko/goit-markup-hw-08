@@ -1,0 +1,35 @@
+.features-list {
+	display: flex;
+}
+
+.features-list__item {
+	flex-basis: calc((100% - 3 * 30px) / 4);
+
+	&:not(:last-child) {
+		margin-right: 30px;
+	}
+}
+
+.features-list__wrapper {
+	@include centered-flex();
+	background-color: $secondary-bg-color;
+	height: 120px;
+	margin-bottom: 30px;
+	border-radius: 4px;
+}
+
+.features-list__title {
+	margin-top: 0;
+	margin-bottom: 10px;
+
+	color: $title-text-color;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	text-transform: uppercase;
+}
+
+.features-list__text {
+	margin-top: 0;
+	margin-bottom: 0;
+}

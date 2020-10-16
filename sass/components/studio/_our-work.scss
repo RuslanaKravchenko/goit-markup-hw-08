@@ -1,0 +1,39 @@
+.our-work {
+	padding-top: 0;
+	padding-bottom: 94px;
+}
+
+.work-list {
+	display: flex;
+}
+
+.work-list__item {
+	position: relative;
+
+	flex-basis: calc((100% - 2 * 30px) / 3);
+
+	&:not(:last-child) {
+		margin-right: 30px;
+	}
+}
+
+.work-list__text {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+
+	display: block;
+	padding-top: 27px;
+	padding-bottom: 27px;
+	margin-top: 0;
+	margin-bottom: 0;
+	width: 100%;
+
+	font-weight: 700;
+	line-height: 1.14;
+	color: $primary-white-color;
+	text-align: center;
+	text-transform: uppercase;
+
+	background-color: rgba(47, 48, 58, 0.8);
+}
