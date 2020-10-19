@@ -1,24 +1,29 @@
 .logo {
-	color: $accent-color;
+  color: $accent-color;
 
-	font-family: $secondary-font;
-	font-size: 26px;
-	line-height: 1.2;
+  font-family: $secondary-font;
+  font-size: 24px;
+  line-height: 1.17;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.2;
+  }
 }
 
 .logo__header {
-	margin-right: 93px;
+  margin-right: 93px;
 }
 
 .logo--dark {
-	color: $title-text-color;
+  color: $title-text-color;
 }
 
 .logo--light {
-	color: $primary-white-color;
+  color: $primary-white-color;
 }
 
 .logo__footer {
-	display: inline-block;
-	margin-bottom: 20px;
+  display: inline-block;
+  margin-bottom: 20px;
 }

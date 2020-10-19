@@ -6,15 +6,36 @@
 }
 
 .footer__container {
-	display: flex;
-	justify-content: space-between;
-	align-items: baseline;
+	@media screen and (min-width: 768px) {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	@media screen and (min-width: 1200px) {
+		justify-content: space-between;
+		align-items: baseline;
+	}
 }
 
 // ==================== Footer contacts ===============
 
 .footer__contacts {
 	width: 270px;
+
+	@media screen and (max-width: 767px) {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	@media screen and (max-width: 1199px) {
+		margin-bottom: 60px;
+		text-align: center;
+	}
+
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		flex-basis: calc((100% - 30px) / 2);
+		margin-right: 30px;
+	}
 }
 
 .address {
@@ -27,7 +48,11 @@
 }
 
 .address__item:not(:last-child) {
-	margin-bottom: 9px;
+	margin-bottom: 8px;
+
+	@media screen and (min-width: 1200px) {
+		margin-bottom: 9px;
+	}
 }
 
 .address__link {
@@ -38,6 +63,20 @@
 
 .social-networks {
 	width: 270px;
+
+	@media screen and (max-width: 767px) {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	@media screen and (max-width: 1199px) {
+		margin-bottom: 60px;
+		text-align: center;
+	}
+
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		flex-basis: calc((100% - 30px) / 2);
+	}
 }
 
 .footer__title {
@@ -52,17 +91,35 @@
 // ===================== Footer form =======================
 
 .subscription {
-	width: 570px;
+	@media screen and (max-width: 767px) {
+		width: 100%;
+	}
+
+	@media screen and (max-width: 1199px) {
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+
+	@media screen and (min-width: 480px) and (max-width: 1199px) {
+		width: 450px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		width: 570px;
+	}
 }
 
 .subscription__form {
-	display: flex;
+	@media screen and (min-width: 1200px) {
+		display: flex;
+	}
 }
 
 .subscription__input {
-	margin-right: 12px;
 	padding: 15px 16px;
-	width: 358px;
+	width: 100%;
+	// width: 358px;
 	height: 50px;
 
 	font-size: 16px;
@@ -73,6 +130,14 @@
 	border: 1px solid rgba(255, 255, 255, 0.3);
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 	border-radius: 4px;
+
+	@media screen and (max-width: 1199px) {
+		margin-bottom: 20px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		margin-right: 12px;
+	}
 
 	&::placeholder {
 		font-size: 16px;
@@ -88,6 +153,11 @@
 	min-width: 200px;
 	min-height: 50px;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+	@media screen and (max-width: 1199px) {
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 
 .subscription__icon {

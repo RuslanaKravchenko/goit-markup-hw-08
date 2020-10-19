@@ -1,15 +1,16 @@
-@import "./utils/vars";
-@import "./utils/base";
-@import "./utils/mixins";
+@import './utils/vars';
+@import './utils/base';
+@import './utils/mixins';
 
-@import "./components/common/page-header";
-@import "./components/common/logo";
-@import "./components/common/page-footer";
-@import "./components/common/list-social-networks";
+@import './components/common/page-header';
+@import './components/common/logo';
+@import './components/common/menu';
+@import './components/common/page-footer';
+@import './components/common/list-social-networks';
 
-@import "./components/studio/hero";
-@import "./components/studio/features";
-@import "./components/studio/our-work";
-@import "./components/studio/our-team";
-@import "./components/studio/regular-clients";
-@import "./components/studio/modal-window";
+@import './components/studio/hero';
+@import './components/studio/features';
+@import './components/studio/our-work';
+@import './components/studio/our-team';
+@import './components/studio/regular-clients';
+@import './components/studio/modal-window';

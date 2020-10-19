@@ -1,8 +1,11 @@
 .social-networks__list {
 	display: flex;
+	justify-content: center;
 
-	&--center {
-		justify-content: center;
+	@media screen and (min-width: 1200px) {
+		&--start {
+			justify-content: start;
+		}
 	}
 }
 
