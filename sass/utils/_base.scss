@@ -6,11 +6,12 @@ body {
   letter-spacing: 0.03em;
   font-size: 14px;
   line-height: 1.71;
-
 }
 
-body.modal-open {
-  overflow: hidden;
+@media screen and (max-width: 1199px) {
+  body.modal-open {
+    overflow: hidden;
+  }
 }
 
 img {

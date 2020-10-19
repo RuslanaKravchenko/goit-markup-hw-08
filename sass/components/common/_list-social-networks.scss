@@ -1,41 +1,41 @@
 .social-networks__list {
-	display: flex;
-	justify-content: center;
+  display: flex;
+  justify-content: center;
 
-	@media screen and (min-width: 1200px) {
-		&--start {
-			justify-content: start;
-		}
-	}
+  @media screen and (min-width: 1200px) {
+    &--start {
+      justify-content: start;
+    }
+  }
 }
 
 .social-networks__item:not(:last-child) {
-	margin-right: 10px;
+  margin-right: 10px;
 }
 
 .social-networks__link {
-	@include centered-flex();
-	width: 44px;
-	height: 44px;
-	border-radius: 50%;
+  @include centered-flex();
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
 
-	background-color: $primary-white-color;
-	fill: $primary-icon-color;
+  background-color: $primary-white-color;
+  fill: $primary-icon-color;
 
-	transition: fill 250ms $timing-function,
-		background-color 250ms $timing-function;
+  transition: fill 250ms $timing-function,
+    background-color 250ms $timing-function;
 
-	&:hover,
-	&:focus {
-		background-color: $accent-color;
-		fill: $primary-white-color;
-	}
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    fill: $primary-white-color;
+  }
 
-	&--footer {
-		background-color: rgba(255, 255, 255, 0.1);
-	}
+  &--footer {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
 }
 
 .social-networks__icon--footer {
-	fill: $primary-white-color;
+  fill: $primary-white-color;
 }

@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -20,11 +25,32 @@
       <div class="container header__container">
         <a
           href="./index.html"
-          class="link logo logo__header"
+          class="link logo logo__header animate__pulse"
           aria-label="логотип"
         >
           Web<span class="logo--dark">Studio</span>
         </a>
+        <button
+          class="menu-button"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+          type="button"
+        >
+          <svg
+            class=""
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use class="icon-cross" href="./images/sprite.svg#menu-cross"></use>
+            <use
+              class="icon-burger"
+              href="./images/sprite.svg#menu-burger"
+            ></use>
+          </svg>
+        </button>
+
         <div class="menu-container" id="menu-container" data-menu>
           <nav>
             <ul class="list site-nav">
@@ -67,27 +93,6 @@
             </li>
           </ul>
         </div>
-
-        <button
-          class="menu-button"
-          aria-expanded="false"
-          aria-controls="menu-container"
-          data-menu-button
-          type="button"
-        >
-          <svg
-            class=""
-            width="40"
-            height="40"
-            aria-label="Переключатель мобильного меню"
-          >
-            <use class="icon-cross" href="./images/sprite.svg#menu-cross"></use>
-            <use
-              class="icon-burger"
-              href="./images/sprite.svg#menu-burger"
-            ></use>
-          </svg>
-        </button>
       </div>
     </header>
 
@@ -768,7 +773,7 @@
 
           <label class="policy">
             <input class="policy__checkbox" type="checkbox" name="policy" />
-            <!-- <span class="checkbox__icon"></span> -->
+
             <span class="policy__label">
               Соглашаюсь с рассылкой и принимаю
               <a class="link contract" href="" aria-label="Условия договора">

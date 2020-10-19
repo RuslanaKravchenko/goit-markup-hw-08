@@ -1,62 +1,62 @@
 .features-list {
-	@media screen and (min-width: 768px) {
-		display: flex;
-		flex-wrap: wrap;
-	}
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .features-list__item {
-	&:not(:last-child) {
-		@media screen and (max-width: 767px) {
-			margin-bottom: 30px;
-		}
-	}
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
 
-	@media screen and (min-width: 768px) and (max-width: 1199px) {
-		flex-basis: calc((100% - 30px) / 2);
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-basis: calc((100% - 30px) / 2);
 
-		&:nth-child(2n + 1) {
-			margin-right: 30px;
-		}
+    &:nth-child(2n + 1) {
+      margin-right: 30px;
+    }
 
-		&:not(:nth-last-child(-n + 2)) {
-			margin-bottom: 30px;
-		}
-	}
+    &:not(:nth-last-child(-n + 2)) {
+      margin-bottom: 30px;
+    }
+  }
 
-	@media screen and (min-width: 1200px) {
-		flex-basis: calc((100% - 3 * 30px) / 4);
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 3 * 30px) / 4);
 
-		&:not(:last-child) {
-			margin-right: 30px;
-		}
-	}
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
 }
 
 .features-list__wrapper {
-	@include centered-flex();
-	background-color: $secondary-bg-color;
-	height: 120px;
-	margin-bottom: 30px;
-	border-radius: 4px;
+  @include centered-flex();
+  background-color: $secondary-bg-color;
+  height: 120px;
+  margin-bottom: 30px;
+  border-radius: 4px;
 }
 
 .features-list__title {
-	margin-top: 0;
-	margin-bottom: 10px;
+  margin-top: 0;
+  margin-bottom: 10px;
 
-	color: $title-text-color;
-	font-weight: 700;
-	font-size: 14px;
-	line-height: 1.14;
-	text-transform: uppercase;
+  color: $title-text-color;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
 
-	@media screen and (max-width: 767px) {
-		text-align: center;
-	}
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .features-list__text {
-	margin-top: 0;
-	margin-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }

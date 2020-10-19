@@ -60,6 +60,7 @@
 .project-list__title {
   margin-top: 0;
   margin-bottom: 4px;
+
   color: $title-text-color;
   font-weight: 700;
   font-size: 18px;
@@ -102,14 +103,27 @@
 .project-list__overlay-text {
   margin-top: 0;
   margin-bottom: 0;
-  padding: 63px 24px;
+  padding: 32px 24px;
 
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.56;
   color: $primary-white-color;
 
   opacity: 0;
   transition: opacity 250ms $timing-function;
+
+  @media screen and (min-width: 480px) {
+    padding: 77px 24px;
+    font-size: 18px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 49px 24px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 63px 24px;
+  }
 
   .project-list__link:hover &,
   .project-list__link:focus & {
