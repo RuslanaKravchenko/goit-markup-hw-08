@@ -693,6 +693,8 @@
               id="mail"
               placeholder="E-mail"
               autocomplete="email"
+              required
+              aria-label="адрес электронной почты"
             />
 
             <button class="subscription__button button" type="submit">
@@ -710,7 +712,7 @@
 
     <div data-modal class="backdrop backdrop--hidden">
       <div class="modal">
-        <button data-modal-close class="modal__button-close">
+        <button type="button" data-modal-close class="modal__button-close">
           <svg class="modal__close-icon" width="11" height="11">
             <use href="./images/sprite.svg#close-black"></use>
           </svg>
@@ -729,6 +731,7 @@
               name="name"
               autocomplete="name"
               placeholder=" "
+              required
             />
             <svg class="form-request__icon" width="18" height="18">
               <use href="./images/sprite.svg#person"></use>
@@ -755,6 +758,7 @@
               type="email"
               name="mail"
               placeholder=" "
+              required
             />
             <svg class="form-request__icon" width="18" height="18">
               <use href="./images/sprite.svg#email"></use>
@@ -766,13 +770,18 @@
             <textarea
               class="field-comment"
               name="comment"
-              rows="10"
               placeholder="Введите текст"
             ></textarea>
           </label>
 
           <label class="policy">
-            <input class="policy__checkbox" type="checkbox" name="policy" />
+            <input
+              class="policy__checkbox"
+              type="checkbox"
+              name="policy"
+              required
+              value="Соглашаюсь с рассылкой и принимаю Условия договора"
+            />
 
             <span class="policy__label">
               Соглашаюсь с рассылкой и принимаю
