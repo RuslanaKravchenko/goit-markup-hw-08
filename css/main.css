@@ -917,7 +917,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .card__face--back {
-    padding: 65px 24px;
+    padding: 60px 24px;
     font-size: 16px;
   }
 }
@@ -1014,7 +1014,6 @@ img {
 @media screen and (min-width: 480px) {
   .modal {
     position: absolute;
-    top: 50%;
     left: 50%;
     width: 450px;
     height: 609px;
@@ -1022,8 +1021,15 @@ img {
   }
 }
 
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .modal {
+    top: calc(50% + 50px);
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .modal {
+    top: 50%;
     width: 528px;
     height: 581px;
   }
@@ -1217,7 +1223,7 @@ img {
   height: 0.5px;
   background-color: #2196f3;
   left: 0;
-  bottom: 2px;
+  bottom: 1px;
 }
 
 @media screen and (min-width: 1200px) {
