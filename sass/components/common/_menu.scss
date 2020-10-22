@@ -5,6 +5,10 @@
   border: none;
   background-color: transparent;
 
+  &:focus {
+    outline: none;
+  }
+
   & .icon-cross {
     display: none;
   }
@@ -15,6 +19,13 @@
 
   &.is-open .icon-burger {
     display: none;
+  }
+
+  &:hover .icon-cross,
+  &:focus .icon-cross,
+  &:hover .icon-burger,
+  &:focus .icon-burger {
+    fill: $accent-color;
   }
 
   @media screen and (min-width: 768px) {

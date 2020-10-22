@@ -327,6 +327,10 @@ img {
   background-color: transparent;
 }
 
+.menu-button:focus {
+  outline: none;
+}
+
 .menu-button .icon-cross {
   display: none;
 }
@@ -337,6 +341,13 @@ img {
 
 .menu-button.is-open .icon-burger {
   display: none;
+}
+
+.menu-button:hover .icon-cross,
+.menu-button:focus .icon-cross,
+.menu-button:hover .icon-burger,
+.menu-button:focus .icon-burger {
+  fill: #2196f3;
 }
 
 @media screen and (min-width: 768px) {
