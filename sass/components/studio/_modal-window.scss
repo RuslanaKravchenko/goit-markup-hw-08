@@ -130,12 +130,11 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition: border-color 250ms $timing-function;
-}
 
-.form-request__field:focus-within .form-request__input,
-.form-request__field:focus-within .field-comment {
-  outline: none;
-  border-color: $accent-color;
+  .form-request__field:focus-within & {
+    outline: none;
+    border-color: $accent-color;
+  }
 }
 
 .form-request__icon {
@@ -207,7 +206,7 @@
   }
 }
 
-.policy .contract {
+.policy__contract {
   position: relative;
   color: $accent-color;
 

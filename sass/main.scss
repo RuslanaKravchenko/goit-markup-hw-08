@@ -1,12 +1,13 @@
 @import './utils/vars';
-@import './utils/base';
 @import './utils/mixins';
+
+@import './base/base';
 
 @import './components/common/page-header';
 @import './components/common/logo';
 @import './components/common/menu';
-@import './components/common/page-footer';
 @import './components/common/list-social-networks';
+@import './components/common/page-footer';
 
 @import './components/studio/hero';
 @import './components/studio/features';

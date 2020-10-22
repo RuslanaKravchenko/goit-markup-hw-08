@@ -55,6 +55,12 @@
   border-right: 1px solid $primary-border-color;
   border-bottom: 1px solid $primary-border-color;
   border-left: 1px solid $primary-border-color;
+
+  &--first {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      padding-bottom: 56px;
+    }
+  }
 }
 
 .project-list__title {
