@@ -96,10 +96,25 @@
     width: 100%;
     height: 100%;
 
-    font-size: 18px;
+    font-size: 16px;
+
     line-height: 1.56;
     color: $primary-white-color;
     background-color: rgba(33, 150, 243, 0.9);
     transform: rotateY(180deg);
+
+    @media screen and (min-width: 480px) {
+      padding: 90px 30px;
+      font-size: 18px;
+    }
+
+    @media screen and (min-width: 768px) {
+      padding: 80px 24px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding: 65px 24px;
+      font-size: 16px;
+    }
   }
 }

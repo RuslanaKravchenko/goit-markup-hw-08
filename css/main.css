@@ -895,11 +895,31 @@ img {
   padding: 63px 24px;
   width: 100%;
   height: 100%;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.56;
   color: #ffffff;
   background-color: rgba(33, 150, 243, 0.9);
   transform: rotateY(180deg);
+}
+
+@media screen and (min-width: 480px) {
+  .card__face--back {
+    padding: 90px 30px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card__face--back {
+    padding: 80px 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card__face--back {
+    padding: 65px 24px;
+    font-size: 16px;
+  }
 }
 
 .regular-clients__list {
