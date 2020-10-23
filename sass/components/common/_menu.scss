@@ -13,8 +13,12 @@
     display: none;
   }
 
+  & .icon-burger {
+    transition: fill 250ms $timing-function;
+  }
   &.is-open .icon-cross {
     display: block;
+    transition: fill 250ms $timing-function;
   }
 
   &.is-open .icon-burger {
