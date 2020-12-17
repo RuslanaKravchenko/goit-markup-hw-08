@@ -100,36 +100,56 @@
     <!-- Портфолио -->
     <main>
       <section class="section">
-        <div class="container">
+        <div class="container" id="projects">
           <!-- Фильтр -->
 
-          <ul class="list filter-list">
+          <ul class="list filter-list" data-controls>
             <li class="filter-list__item">
-              <button class="button filter-list__button" type="button">
+              <button
+                data-control="all"
+                class="button filter-list__button"
+                type="button"
+              >
                 Все
               </button>
             </li>
 
             <li class="filter-list__item">
-              <button class="button filter-list__button" type="button">
+              <button
+                data-control="webSites"
+                class="button filter-list__button"
+                type="button"
+              >
                 Веб-сайты
               </button>
             </li>
 
             <li class="filter-list__item">
-              <button class="button filter-list__button" type="button">
+              <button
+                data-control="apps"
+                class="button filter-list__button"
+                type="button"
+              >
                 Приложения
               </button>
             </li>
 
             <li class="filter-list__item">
-              <button class="button filter-list__button" type="button">
+              <button
+                data-control="design"
+                class="button filter-list__button"
+                type="button"
+              >
                 Дизайн
               </button>
             </li>
 
             <li class="filter-list__item">
-              <button class="button filter-list__button" type="button">
+              <button
+                data-control="marketing"
+                class="button filter-list__button"
+                type="button"
+              >
                 Маркетинг
               </button>
             </li>
@@ -137,9 +157,9 @@
 
           <!-- Список проектов -->
 
-          <ul class="list project-list">
-            <li class="project-list__item">
-              <a href="" class="link project-list__link">
+          <ul class="list project-list" data-panes>
+            <li class="project-list__item" data-pane="webSites">
+              <a href="#" class="link project-list__link">
                 <div class="project-list__thumb">
                   <picture>
                     <source
@@ -219,8 +239,8 @@
               </a>
             </li>
 
-            <li class="project-list__item">
-              <a href="" class="link project-list__link">
+            <li class="project-list__item" data-pane="design">
+              <a href="#" class="link project-list__link">
                 <div class="project-list__thumb">
                   <picture>
                     <source
@@ -303,8 +323,8 @@
               </a>
             </li>
 
-            <li class="project-list__item">
-              <a href="" class="link project-list__link">
+            <li class="project-list__item" data-pane="apps">
+              <a href="#" class="link project-list__link">
                 <div class="project-list__thumb">
                   <picture>
                     <source
@@ -387,8 +407,8 @@
               </a>
             </li>
 
-            <li class="project-list__item">
-              <a href="" class="link project-list__link">
+            <li class="project-list__item" data-pane="marketing">
+              <a href="#" class="link project-list__link">
                 <div class="project-list__thumb">
                   <picture>
                     <source
@@ -471,8 +491,8 @@
               </a>
             </li>
 
-            <li class="project-list__item">
-              <a href="" class="link project-list__link">
+            <li class="project-list__item" data-pane="apps">
+              <a href="#" class="link project-list__link">
                 <div class="project-list__thumb">
                   <picture>
                     <source
@@ -555,8 +575,8 @@
               </a>
             </li>
 
-            <li class="project-list__item">
-              <a href="" class="link project-list__link">
+            <li class="project-list__item" data-pane="webSites">
+              <a href="#" class="link project-list__link">
                 <div class="project-list__thumb">
                   <picture>
                     <source
@@ -638,8 +658,8 @@
               </a>
             </li>
 
-            <li class="project-list__item">
-              <a href="" class="link project-list__link">
+            <li class="project-list__item" data-pane="design">
+              <a href="#" class="link project-list__link">
                 <div class="project-list__thumb">
                   <picture>
                     <source
@@ -722,8 +742,8 @@
               </a>
             </li>
 
-            <li class="project-list__item">
-              <a href="" class="link project-list__link">
+            <li class="project-list__item" data-pane="marketing">
+              <a href="#" class="link project-list__link">
                 <div class="project-list__thumb">
                   <picture>
                     <source
@@ -803,8 +823,8 @@
               </a>
             </li>
 
-            <li class="project-list__item">
-              <a href="" class="link project-list__link">
+            <li class="project-list__item" data-pane="apps">
+              <a href="#" class="link project-list__link">
                 <div class="project-list__thumb">
                   <picture>
                     <source
@@ -1030,6 +1050,7 @@
       </div>
     </footer>
 
-    <script src="./js/menu.js"></script>
+    <script type="module" src="./js/menu.js"></script>
+    <script type="module" src="./js/tabs-plugin.js"></script>
   </body>
 </html>

@@ -6,6 +6,8 @@
 }
 
 .project-list__item {
+  display: none;
+
   &:not(:last-child) {
     @media screen and (max-width: 767px) {
       margin-bottom: 30px;
@@ -136,4 +138,8 @@
   .project-list__link:focus & {
     opacity: 1;
   }
+}
+
+.pane--active {
+  display: block;
 }
